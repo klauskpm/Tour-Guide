@@ -7,8 +7,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
 
-import layout.EventsFragment;
-
 /**
  * Created by Kazlauskas on 03/10/2016.
  */

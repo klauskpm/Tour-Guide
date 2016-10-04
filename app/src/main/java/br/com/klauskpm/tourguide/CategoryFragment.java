@@ -11,7 +11,7 @@ import android.widget.TextView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CategoryFragment extends Fragment {
+public abstract class CategoryFragment extends Fragment {
     private int mTitleResourceId;
 
     /**
