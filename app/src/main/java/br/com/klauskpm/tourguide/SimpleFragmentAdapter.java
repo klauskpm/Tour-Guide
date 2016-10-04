@@ -21,6 +21,7 @@ public class SimpleFragmentAdapter extends FragmentPagerAdapter {
         mContext = context;
 
         mFragmentArrayList.add(new EventsFragment());
+        mFragmentArrayList.add(new PlacesFragment());
     }
 
     @Override
