@@ -32,11 +32,11 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         final Location location = getItem(position);
         assert location != null;
 
-        TextView titleTextView = (TextView) listView.findViewById(R.id.item_title__text_view);
-        titleTextView.setText(location.getTitle());
+        TextView fakeTitleTextView = (TextView) listView.findViewById(R.id.item_fake_location_title__text_view);
+        fakeTitleTextView.setText(location.getFakePlaceTitle());
 
-        TextView locationTextView = (TextView) listView.findViewById(R.id.item_location__text_view);
-        locationTextView.setText(location.getGeoPosition());
+        TextView realTitleTextView = (TextView) listView.findViewById(R.id.item_real_location_title__text_view);
+        realTitleTextView.setText(location.getRealPlaceTitle());
 
         return listView;
     }
