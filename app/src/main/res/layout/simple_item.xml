@@ -9,12 +9,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Title"
-        android:id="@+id/item_title__text_view"/>
+        android:id="@+id/item_fake_location_title__text_view"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Location"
-        android:id="@+id/item_location__text_view"/>
+        android:id="@+id/item_real_location_title__text_view"/>
 
 </LinearLayout>

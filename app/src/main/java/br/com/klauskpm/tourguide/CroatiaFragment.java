@@ -1,0 +1,29 @@
+package br.com.klauskpm.tourguide;
+
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class CroatiaFragment extends CategoryFragment {
+
+
+    public CroatiaFragment() {
+        // Required empty public constructor
+
+        setTitleResourceId(R.string.category_croatia);
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        locationArrayList.add(new Location("Kings Landing", "Dubrovnik", 42.649654, 18.093098));
+        locationArrayList.add(new Location("Red Keep", "Lovrijenac Fortress"));
+        locationArrayList.add(new Location("House of the Undying", "Minčeta Tower"));
+        locationArrayList.add(new Location("Qarth", "Lokrum"));
+    }
+}

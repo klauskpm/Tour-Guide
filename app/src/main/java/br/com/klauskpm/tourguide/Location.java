@@ -5,26 +5,29 @@ package br.com.klauskpm.tourguide;
  */
 
 public class Location {
-    private String mTitle;
+    private String mFakePlaceTitle;
+    private String mRealPlaceTitle;
     private double mLongitude;
     private double mLatitude;
 
-    public Location(String mTitle) {
-        this.mTitle = mTitle;
+    public Location(String mFakePlaceTitle, String mRealPlaceTitle) {
+        this.mFakePlaceTitle = mFakePlaceTitle;
+        this.mRealPlaceTitle = mRealPlaceTitle;
     }
 
-    public Location(String mTitle, double mLongitude, double mLatitude) {
-        this.mTitle = mTitle;
+    public Location(String mFakePlaceTitle, String mRealPlaceTitle, double mLongitude, double mLatitude) {
+        this.mFakePlaceTitle = mFakePlaceTitle;
+        this.mRealPlaceTitle = mRealPlaceTitle;
         this.mLongitude = mLongitude;
         this.mLatitude = mLatitude;
     }
 
-    public String getTitle() {
-        return mTitle;
+    public String getFakePlaceTitle() {
+        return mFakePlaceTitle;
     }
 
-    public void setTitle(String mTitle) {
-        this.mTitle = mTitle;
+    public void setFakePlaceTitle(String mFakePlaceTitle) {
+        this.mFakePlaceTitle = mRealPlaceTitle;
     }
 
     public double getLong() {
@@ -45,5 +48,13 @@ public class Location {
 
     public String getGeoPosition() {
         return getLat() + "," + getLong();
+    }
+
+    public String getRealPlaceTitle() {
+        return mRealPlaceTitle;
+    }
+
+    public void setRealPlaceTitle(String mRealPlaceTitle) {
+        this.mRealPlaceTitle = mRealPlaceTitle;
     }
 }
