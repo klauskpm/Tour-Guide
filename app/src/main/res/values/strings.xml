@@ -4,5 +4,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="category_croatia">Croatia</string>
-    <string name="category_places">Places</string>
+    <string name="category_ireland">Ireland</string>
+    <string name="category_iceland">Iceland</string>
+    <string name="category_morroco">Morroco</string>
+    <string name="category_malta">Malta</string>
 </resources>
