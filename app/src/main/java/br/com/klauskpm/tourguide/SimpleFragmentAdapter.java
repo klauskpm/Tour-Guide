@@ -21,7 +21,7 @@ public class SimpleFragmentAdapter extends FragmentPagerAdapter {
         mContext = context;
 
         mFragmentArrayList.add(new CroatiaFragment());
-        mFragmentArrayList.add(new PlacesFragment());
+        mFragmentArrayList.add(new IrelandFragment());
     }
 
     @Override
