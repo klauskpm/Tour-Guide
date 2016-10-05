@@ -24,6 +24,7 @@ public class SimpleFragmentAdapter extends FragmentPagerAdapter {
         mFragmentArrayList.add(new IrelandFragment());
         mFragmentArrayList.add(new IcelandFragment());
         mFragmentArrayList.add(new MorrocoFragment());
+        mFragmentArrayList.add(new MaltaFragment());
     }
 
     @Override
