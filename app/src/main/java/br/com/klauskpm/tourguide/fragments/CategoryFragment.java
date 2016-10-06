@@ -3,6 +3,7 @@ package br.com.klauskpm.tourguide.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,7 +65,9 @@ public abstract class CategoryFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Location location = locationArrayList.get(position);
-                Map.callIntent(getContext(), location.getLat(), location.getLong());
+                Log.d("TAGE", "onItemClick: " + location.getRealPlaceTitle());
+                Map.callIntent(getContext(), location.getLat(), location.getLong(),
+                        location.getRealPlaceTitle());
             }
         });
 
