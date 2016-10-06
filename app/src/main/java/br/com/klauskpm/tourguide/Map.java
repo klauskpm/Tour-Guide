@@ -16,8 +16,9 @@ public class Map {
     public static final int ZOOM = 8;
     public static final String MAP_PACKAGE = "com.google.android.apps.maps";
 
-    public static void callIntent(Context context, double latitude, double longitude) {
-        Uri gmmIntentUri = Uri.parse("geo:" + latitude + "," + longitude + "?z=" + ZOOM);
+    public static void callIntent(Context context, double latitude, double longitude,
+                                  String queryString) {
+        Uri gmmIntentUri = Uri.parse("geo:" + latitude + "," + longitude + "?q=" + queryString);
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
 
         PackageManager pm = context.getPackageManager();

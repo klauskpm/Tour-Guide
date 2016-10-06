@@ -24,9 +24,9 @@ public class CroatiaFragment extends CategoryFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        locationArrayList.add(new Location("Kings Landing", "Dubrovnik", 42.649654, 18.093098));
-        locationArrayList.add(new Location("Red Keep", "Lovrijenac Fortress"));
-        locationArrayList.add(new Location("House of the Undying", "Minčeta Tower"));
-        locationArrayList.add(new Location("Qarth", "Lokrum"));
+        locationArrayList.add(new Location("Kings Landing", "Dubrovnik", 18.0988, 42.6474));
+        locationArrayList.add(new Location("Red Keep", "Lovrijenac Fortress", 18.104176, 42.640565));
+        locationArrayList.add(new Location("House of the Undying", "Minčeta Tower", 18.108474, 42.642745));
+        locationArrayList.add(new Location("Qarth", "Lokrum", 18.120097, 42.628536));
     }
 }
