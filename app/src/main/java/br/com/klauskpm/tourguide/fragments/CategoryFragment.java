@@ -6,11 +6,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 import br.com.klauskpm.tourguide.Location;
+import br.com.klauskpm.tourguide.Map;
 import br.com.klauskpm.tourguide.R;
 import br.com.klauskpm.tourguide.adapters.LocationAdapter;
 
@@ -57,6 +59,14 @@ public abstract class CategoryFragment extends Fragment {
         ListView simpleList = (ListView) rootView.findViewById(R.id.simple_list);
         assert simpleList != null;
         simpleList.setAdapter(locationAdapter);
+
+        simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Location location = locationArrayList.get(position);
+                Map.callIntent(getContext(), location.getLat(), location.getLong());
+            }
+        });
 
         return rootView;
     }
