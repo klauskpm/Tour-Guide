@@ -1,9 +1,12 @@
-package br.com.klauskpm.tourguide;
+package br.com.klauskpm.tourguide.fragments;
 
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+
+import br.com.klauskpm.tourguide.Location;
+import br.com.klauskpm.tourguide.R;
 
 /**
  * A simple {@link Fragment} subclass.

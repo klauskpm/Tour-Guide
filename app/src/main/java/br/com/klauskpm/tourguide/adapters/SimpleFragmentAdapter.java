@@ -1,4 +1,4 @@
-package br.com.klauskpm.tourguide;
+package br.com.klauskpm.tourguide.adapters;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -6,6 +6,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
+
+import br.com.klauskpm.tourguide.fragments.CategoryFragment;
+import br.com.klauskpm.tourguide.fragments.CroatiaFragment;
+import br.com.klauskpm.tourguide.fragments.IcelandFragment;
+import br.com.klauskpm.tourguide.fragments.IrelandFragment;
+import br.com.klauskpm.tourguide.fragments.MaltaFragment;
+import br.com.klauskpm.tourguide.fragments.MorrocoFragment;
 
 /**
  * Created by Kazlauskas on 03/10/2016.

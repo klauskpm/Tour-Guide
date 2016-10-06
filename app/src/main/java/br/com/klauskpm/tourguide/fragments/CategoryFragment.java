@@ -1,4 +1,4 @@
-package br.com.klauskpm.tourguide;
+package br.com.klauskpm.tourguide.fragments;
 
 
 import android.os.Bundle;
@@ -9,6 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+
+import br.com.klauskpm.tourguide.Location;
+import br.com.klauskpm.tourguide.R;
+import br.com.klauskpm.tourguide.adapters.LocationAdapter;
 
 /**
  * A simple {@link Fragment} subclass.

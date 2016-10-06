@@ -1,4 +1,4 @@
-package br.com.klauskpm.tourguide;
+package br.com.klauskpm.tourguide.adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,6 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import br.com.klauskpm.tourguide.Location;
+import br.com.klauskpm.tourguide.R;
 
 /**
  * Created by klaus on 04/10/16.
