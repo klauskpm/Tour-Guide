@@ -3,17 +3,14 @@ package br.com.klauskpm.tourguide.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 import br.com.klauskpm.tourguide.Location;
-import br.com.klauskpm.tourguide.Map;
 import br.com.klauskpm.tourguide.R;
 import br.com.klauskpm.tourguide.adapters.LocationAdapter;
 
@@ -54,22 +51,12 @@ public abstract class CategoryFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.simple_list, container, false);
 
-        LocationAdapter locationAdapter = new LocationAdapter(getActivity(), R.layout.simple_item,
+        LocationAdapter locationAdapter = new LocationAdapter(getActivity(),
                 locationArrayList);
 
         ListView simpleList = (ListView) rootView.findViewById(R.id.simple_list);
         assert simpleList != null;
         simpleList.setAdapter(locationAdapter);
-
-        simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Location location = locationArrayList.get(position);
-                Log.d("TAGE", "onItemClick: " + location.getRealPlaceTitle());
-                Map.callIntent(getContext(), location.getLat(), location.getLong(),
-                        location.getRealPlaceTitle());
-            }
-        });
 
         return rootView;
     }
