@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -37,6 +38,13 @@ public class LocationAdapter extends ArrayAdapter<Location> {
 
         final Location location = getItem(position);
         assert location != null;
+
+        Log.d("UDACITY", "getView: " + location.getRealPlaceTitle() + " " + location.hasImage());
+        if (location.hasImage()) {
+            Log.d("UDACITY", "getView: entered");
+            ImageView placeImage = (ImageView) rootView.findViewById(R.id.place_image);
+            placeImage.setImageResource(location.getmImageResourceId());
+        }
 
         TextView fakeTitleTextView = (TextView) rootView.findViewById(R.id.got_place_name);
         fakeTitleTextView.setText(location.getFakePlaceTitle());
