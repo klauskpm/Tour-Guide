@@ -1,5 +1,6 @@
 package br.com.klauskpm.tourguide.adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.util.Log;
@@ -29,12 +30,10 @@ public class LocationAdapter extends ArrayAdapter<Location> {
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View rootView = convertView;
-        if (rootView == null) {
-            rootView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.card_item, parent, false
-            );
-        }
+        @SuppressLint("ViewHolder")
+        View rootView = LayoutInflater.from(getContext()).inflate(
+                R.layout.card_item, parent, false
+        );
 
         final Location location = getItem(position);
         assert location != null;
