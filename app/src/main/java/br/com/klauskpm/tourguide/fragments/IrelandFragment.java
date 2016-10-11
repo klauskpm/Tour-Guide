@@ -23,10 +23,10 @@ public class IrelandFragment extends CategoryFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        locationArrayList.add(new Location("Northern Forests", "Tollymore Forest Park", -5.942564, 54.219669));
-        locationArrayList.add(new Location("Winterfell", "Ward Castle", -5.585427, 54.369072));
-        locationArrayList.add(new Location("Dragonstone Castle beach", "Mussenden Temple", -6.810731, 55.167690));
-        locationArrayList.add(new Location("King's Landing road", "The Dark Hedges", -6.380715, 55.134564));
-        locationArrayList.add(new Location("Lordsport", "Ballintoy Harbour", -6.368850, 55.244179));
+        locationArrayList.add(new Location("Northern Forests", "Tollymore Forest Park", -5.942564, 54.219669, R.drawable.tollymore_forest_park));
+        locationArrayList.add(new Location("Winterfell", "Ward Castle", -5.585427, 54.369072, R.drawable.ward_castle));
+        locationArrayList.add(new Location("Dragonstone Castle beach", "Mussenden Temple", -6.810731, 55.167690, R.drawable.mussenden_temple));
+        locationArrayList.add(new Location("King's Landing road", "The Dark Hedges", -6.380715, 55.134564, R.drawable.the_dark_hedges));
+        locationArrayList.add(new Location("Lordsport", "Ballintoy Harbour", -6.368850, 55.244179, R.drawable.ballintoy_harbour));
     }
 }

@@ -23,8 +23,8 @@ public class IcelandFragment extends CategoryFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        locationArrayList.add(new Location("Beyond the Wall", "Vatnajokull", -17.043083, 64.411942));
-        locationArrayList.add(new Location("Frostfangs Mountains", "Höfðabrekkuheiði", -18.903275, 63.506709));
-        locationArrayList.add(new Location("John Snow and Ygritte Thermal Spring", "Grjótagjá cave", -16.883197, 65.626983));
+        locationArrayList.add(new Location("Beyond the Wall", "Vatnajokull", -17.043083, 64.411942, R.drawable.vatnajokull));
+        locationArrayList.add(new Location("Frostfangs Mountains", "Höfðabrekkuheiði", -18.903275, 63.506709, R.drawable.hofoabrekkuheioi));
+        locationArrayList.add(new Location("John Snow and Ygritte Spring", "Grjótagjá cave", -16.883197, 65.626983, R.drawable.grjotagja_cave));
     }
 }

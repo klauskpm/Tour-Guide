@@ -2,12 +2,12 @@ package br.com.klauskpm.tourguide.adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -38,6 +38,11 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         final Location location = getItem(position);
         assert location != null;
 
+        if (location.hasImage()) {
+            ImageView placeImage = (ImageView) rootView.findViewById(R.id.place_image);
+            placeImage.setImageResource(location.getmImageResourceId());
+        }
+
         TextView fakeTitleTextView = (TextView) rootView.findViewById(R.id.got_place_name);
         fakeTitleTextView.setText(location.getFakePlaceTitle());
 
@@ -48,7 +53,6 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         mapActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("TAGE", "onItemClick: " + location.getRealPlaceTitle());
                 Map.callIntent(getContext(), location.getLat(), location.getLong(),
                         location.getRealPlaceTitle());
             }
