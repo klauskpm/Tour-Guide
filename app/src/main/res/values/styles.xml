@@ -23,6 +23,11 @@
     <!-- Category Styles -->
     <style name="Category"/>
 
+    <style name="Category.List" parent="MatchParent">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0.0sp</item>
+    </style>
+
     <!-- Category.ListItem Styles -->
     <style name="Category.ListItem" />
 
