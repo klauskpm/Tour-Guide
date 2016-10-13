@@ -17,11 +17,16 @@ import br.com.klauskpm.tourguide.fragments.MorrocoFragment;
 /**
  * Created by Kazlauskas on 03/10/2016.
  */
-
 public class SimpleFragmentAdapter extends FragmentPagerAdapter {
     private ArrayList<CategoryFragment> mFragmentArrayList = new ArrayList<CategoryFragment>();
     private Context mContext;
 
+    /**
+     * Instantiates a new Simple fragment adapter.
+     *
+     * @param context the context
+     * @param fm      the fm
+     */
     public SimpleFragmentAdapter(Context context, FragmentManager fm) {
         super(fm);
 
