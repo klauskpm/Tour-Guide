@@ -21,4 +21,14 @@
     <string name="vatnajokull">Vatnajokull</string>
     <string name="hofoabrekkuheioi">Höfðabrekkuheiði</string>
     <string name="grjotagja_cave">Grjótagjá cave</string>
+    <string name="northern_forests">Northern Forests</string>
+    <string name="winterfell">Winterfell</string>
+    <string name="dragonstone_castle_beach">Dragonstone Castle beach</string>
+    <string name="king_landing_road">King\'s Landing road</string>
+    <string name="lordsport">Lordsport</string>
+    <string name="tollymore_forest_park">Tollymore Forest Park</string>
+    <string name="ward_castle">Ward Castle</string>
+    <string name="mussenden_temple">Mussenden Temple</string>
+    <string name="the_dark_hedges">The Dark Hedges</string>
+    <string name="ballintoy_harbour">Ballintoy Harbour</string>
 </resources>
