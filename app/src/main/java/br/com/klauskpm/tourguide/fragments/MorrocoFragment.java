@@ -24,7 +24,7 @@ public class MorrocoFragment extends CategoryFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        locationArrayList.add(new Location("Yunkai and Pentos", "Aït Ben Haddou", -7.130282, 31.045886, R.drawable.ait_ben_haddou));
-        locationArrayList.add(new Location("Astapor", "Essaouira", -9.760760, 31.507504, R.drawable.essaouira));
+        locationArrayList.add(new Location(getString(R.string.yunkai_and_pentos), getString(R.string.ait_ben_haddou), -7.130282, 31.045886, R.drawable.ait_ben_haddou));
+        locationArrayList.add(new Location(getString(R.string.astapor), getString(R.string.essaouira), -9.760760, 31.507504, R.drawable.essaouira));
     }
 }

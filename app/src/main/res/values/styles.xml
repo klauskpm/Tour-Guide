@@ -15,4 +15,91 @@
         <item name="elevation">0dp</item>
     </style>
 
+    <style name="MatchParent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="AppTheme.Tab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="app:tabGravity">fill</item>
+        <item name="app:tabMaxWidth">0dp</item>
+        <item name="app:tabMode">scrollable</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="app:tabTextColor">@android:color/white</item>
+        <item name="app:tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.ViewPager" parent="MatchParent" />
+
+    <!-- Category Styles -->
+    <style name="Category"/>
+
+    <style name="Category.List" parent="MatchParent">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0.0sp</item>
+    </style>
+
+    <!-- Category.ListItem Styles -->
+    <style name="Category.ListItem" />
+
+    <style name="Category.ListItem.Item">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Category.ListItem.Card">
+        <item name="android:layout_height">@dimen/card_height</item>
+        <item name="android:layout_width">@dimen/card_width</item>
+        <item name="android:layout_marginTop">@dimen/card_space</item>
+        <item name="android:layout_marginBottom">@dimen/card_space</item>
+    </style>
+
+    <style name="Category.ListItem.CardContainer" parent="MatchParent" />
+
+    <style name="Category.ListItem.CardFrame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/card_width</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="Category.ListItem.Image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/cardview_dark_background</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="Category.ListItem.GOTPlace">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/card_text_height</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/card_text_size</item>
+        <item name="android:layout_marginBottom">@dimen/activity_half_vertical_margin</item>
+        <item name="android:layout_marginStart">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="Category.ListItem.RealPlace" parent="Category.ListItem.GOTPlace">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginTop">@dimen/activity_half_vertical_margin</item>
+    </style>
+
+    <style name="Category.ListItem.MapActionButton" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:text">See on the map</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/card_button_text_size</item>
+        <item name="android:layout_marginEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_half_vertical_margin</item>
+    </style>
+
 </resources>
