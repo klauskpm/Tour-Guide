@@ -1,70 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center">
+    style="@style/Category.ListItem.Item">
 
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="300dp"
-        android:layout_height="380dp"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp">
+        style="@style/Category.ListItem.Card">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            style="@style/Category.ListItem.CardContainer">
 
             <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
+                style="@style/Category.ListItem.CardFrame"
                 android:id="@+id/image_frame">
 
                 <ImageView
                     android:id="@+id/place_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@color/cardview_dark_background"
-                    android:scaleType="centerCrop"/>
+                    style="@style/Category.ListItem.Image"/>
             </FrameLayout>
 
             <TextView
                 android:id="@+id/got_place_name"
-                android:layout_width="match_parent"
-                android:layout_height="28dp"
-                android:layout_alignBottom="@id/image_frame"
-                android:text="Lugar falso"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginStart="16dp"/>
+                style="@style/Category.ListItem.GOTPlace"
+                android:layout_alignBottom="@id/image_frame"/>
 
             <TextView
                 android:id="@+id/real_life_place_name"
-                android:layout_width="match_parent"
-                android:layout_height="28dp"
-                android:layout_alignParentStart="true"
                 android:layout_below="@id/image_frame"
-                android:text="Lugar verdadeiro"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="16dp"/>
+                style="@style/Category.ListItem.RealPlace"/>
 
             <Button
                 android:id="@+id/map_action_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
                 android:layout_below="@id/real_life_place_name"
-                android:text="See on the map"
-                android:background="?android:attr/selectableItemBackground"
-                android:textColor="@color/colorAccent"
-                android:textSize="18sp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="8dp"/>
+                style="@style/Category.ListItem.MapActionButton"/>
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>

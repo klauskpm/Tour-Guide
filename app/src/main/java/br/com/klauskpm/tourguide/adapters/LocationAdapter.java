@@ -19,8 +19,13 @@ import br.com.klauskpm.tourguide.R;
 /**
  * Created by klaus on 04/10/16.
  */
-
 public class LocationAdapter extends ArrayAdapter<Location> {
+    /**
+     * Instantiates a new Location adapter.
+     *
+     * @param context   the context
+     * @param locations the locations
+     */
     public LocationAdapter(Context context, ArrayList<Location> locations) {
         super(context, 0, locations);
     }
