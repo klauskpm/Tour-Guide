@@ -23,9 +23,9 @@ public class MaltaFragment extends CategoryFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        locationArrayList.add(new Location("Kings Landing Gate", "Mdina Gate", 14.403344, 35.884589, R.drawable.mdina_gate));
-        locationArrayList.add(new Location("Red Keep Gate", "Fort Ricasoli", 14.527209, 35.896228, R.drawable.fort_ricasoli));
-        locationArrayList.add(new Location("Daenerys and Drogo Wedding", "Azure Window", 14.188042, 36.053517, R.drawable.azure_window));
-        locationArrayList.add(new Location("Illyrio Mopatis's House", "Verdala Palace", 14.400482, 35.861507, R.drawable.verdala_palace));
+        locationArrayList.add(new Location(getString(R.string.kings_landing_gate), getString(R.string.mdina_gate), 14.403344, 35.884589, R.drawable.mdina_gate));
+        locationArrayList.add(new Location(getString(R.string.red_keep_gate), getString(R.string.fort_ricasoli), 14.527209, 35.896228, R.drawable.fort_ricasoli));
+        locationArrayList.add(new Location(getString(R.string.daenerys_and_drogo_wedding), getString(R.string.azure_window), 14.188042, 36.053517, R.drawable.azure_window));
+        locationArrayList.add(new Location(getString(R.string.illyrio_mopatis_house), getString(R.string.verdala_palace), 14.400482, 35.861507, R.drawable.verdala_palace));
     }
 }

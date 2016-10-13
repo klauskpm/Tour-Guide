@@ -31,4 +31,12 @@
     <string name="mussenden_temple">Mussenden Temple</string>
     <string name="the_dark_hedges">The Dark Hedges</string>
     <string name="ballintoy_harbour">Ballintoy Harbour</string>
+    <string name="kings_landing_gate">Kings Landing Gate</string>
+    <string name="red_keep_gate">Red Keep Gate</string>
+    <string name="daenerys_and_drogo_wedding">Daenerys and Drogo Wedding</string>
+    <string name="illyrio_mopatis_house">Illyrio Mopatis\'s House</string>
+    <string name="mdina_gate">Mdina Gate</string>
+    <string name="fort_ricasoli">Fort Ricasoli</string>
+    <string name="azure_window">Azure Window</string>
+    <string name="verdala_palace">Verdala Palace</string>
 </resources>
