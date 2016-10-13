@@ -30,11 +30,11 @@ public class Location {
     /**
      * Instantiates a new Location.
      *
-     * @param mFakePlaceTitle   the fake place title
-     * @param mRealPlaceTitle   the real place title
-     * @param mLongitude        the longitude
-     * @param mLatitude         the latitude
-     * @param mImageResourceId  the image resource ID
+     * @param mFakePlaceTitle  the fake place title
+     * @param mRealPlaceTitle  the real place title
+     * @param mLongitude       the longitude
+     * @param mLatitude        the latitude
+     * @param mImageResourceId the image resource ID
      */
     public Location(String mFakePlaceTitle, String mRealPlaceTitle, double mLongitude,
                     double mLatitude, int mImageResourceId) {
@@ -126,14 +126,30 @@ public class Location {
         this.mRealPlaceTitle = mRealPlaceTitle;
     }
 
+
+    /**
+     * Gets image resource id.
+     *
+     * @return the image resource id
+     */
     public int getmImageResourceId() {
         return mImageResourceId;
     }
 
+    /**
+     * Sets image resource id.
+     *
+     * @param mImageResourceId the image resource id
+     */
     public void setmImageResourceId(int mImageResourceId) {
         this.mImageResourceId = mImageResourceId;
     }
 
+    /**
+     * Has image boolean.
+     *
+     * @return the boolean
+     */
     public boolean hasImage() {
         return this.mImageResourceId != UNDEFINED_IMAGE;
     }
