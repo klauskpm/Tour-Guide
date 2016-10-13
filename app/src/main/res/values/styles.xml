@@ -23,12 +23,12 @@
     <style name="AppTheme.Tab">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="app:tabGravity">fill</item>
-        <item name="app:tabMaxWidth">0dp</item>
-        <item name="app:tabMode">scrollable</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+        <item name="tabMode">scrollable</item>
         <item name="android:background">@color/colorPrimary</item>
-        <item name="app:tabTextColor">@android:color/white</item>
-        <item name="app:tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
     </style>
 
     <style name="AppTheme.ViewPager" parent="MatchParent" />
