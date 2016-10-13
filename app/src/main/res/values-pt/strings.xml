@@ -2,4 +2,31 @@
 <resources>
     <string name="category_croatia">Croácia</string>
     <string name="category_ireland">Irlanda</string>
+    <string name="azure_window">Janela Azul</string>
+    <string name="ballintoy_harbour">Porto do Ballintoy</string>
+    <string name="beyond_the_wall">Além da Muralha</string>
+    <string name="category_iceland">Islândia</string>
+    <string name="category_malta">Malta</string>
+    <string name="category_morroco">Marrocos</string>
+    <string name="daenerys_and_drogo_wedding">Casamento de Daenerys e Drogo</string>
+    <string name="dragonstone_castle_beach">Praia do Castelo Dragonstone</string>
+    <string name="fort_ricasoli">Forte Ricasoli</string>
+    <string name="frostfangs_mountains">Montanhas Frostfangs</string>
+    <string name="grjotagja_cave">Caverna Grjótagjá</string>
+    <string name="house_of_the_undying">Casa dos Imortais</string>
+    <string name="illyrio_mopatis_house">Casa do Illyrio Mopatis</string>
+    <string name="john_and_ygritte_spring">Fonte John Snow e Ygritte</string>
+    <string name="king_landing_road">Estrada para King\' Landing</string>
+    <string name="kings_landing_gate">Portão de King\'s Landing</string>
+    <string name="lovrijenac_fortress">Fortaleza de Lovrijenac</string>
+    <string name="mdina_gate">Portão de Mdina</string>
+    <string name="minceta_tower">Torre de Minčeta</string>
+    <string name="mussenden_temple">Templo de Mussenden</string>
+    <string name="northern_forests">Florestas do norte</string>
+    <string name="red_keep_gate">Portão do Red Keep</string>
+    <string name="the_dark_hedges"></string>
+    <string name="tollymore_forest_park">Parque Florestal Tollymore</string>
+    <string name="verdala_palace">Palácio de Verdala</string>
+    <string name="ward_castle">Castelo Ward</string>
+    <string name="yunkai_and_pentos">Yunkai e Pentos</string>
 </resources>

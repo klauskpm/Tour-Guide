@@ -7,29 +7,29 @@
     <string name="category_iceland">Iceland</string>
     <string name="category_morroco">Morroco</string>
     <string name="category_malta">Malta</string>
-    <string name="kings_landing">King\'s Landing</string>
-    <string name="red_keep">Red Keep</string>
+    <string name="kings_landing" translatable="false">King\'s Landing</string>
+    <string name="red_keep" translatable="false">Red Keep</string>
     <string name="house_of_the_undying">House of the Undying</string>
-    <string name="qarth">Qarth</string>
-    <string name="dubrovnik">Dubrovnik</string>
+    <string name="qarth" translatable="false">Qarth</string>
+    <string name="dubrovnik" translatable="false">Dubrovnik</string>
     <string name="lovrijenac_fortress">Lovrijenac Fortress</string>
     <string name="minceta_tower">Minčeta Tower</string>
-    <string name="lokrum">Lokrum</string>
+    <string name="lokrum" translatable="false">Lokrum</string>
     <string name="beyond_the_wall">Beyond the Wall</string>
     <string name="frostfangs_mountains">Frostfangs Mountains</string>
     <string name="john_and_ygritte_spring">John Snow and Ygritte Spring</string>
-    <string name="vatnajokull">Vatnajokull</string>
-    <string name="hofoabrekkuheioi">Höfðabrekkuheiði</string>
+    <string name="vatnajokull" translatable="false">Vatnajokull</string>
+    <string name="hofoabrekkuheioi" translatable="false">Höfðabrekkuheiði</string>
     <string name="grjotagja_cave">Grjótagjá cave</string>
     <string name="northern_forests">Northern Forests</string>
-    <string name="winterfell">Winterfell</string>
+    <string name="winterfell" translatable="false">Winterfell</string>
     <string name="dragonstone_castle_beach">Dragonstone Castle beach</string>
     <string name="king_landing_road">King\'s Landing road</string>
-    <string name="lordsport">Lordsport</string>
+    <string name="lordsport" translatable="false">Lordsport</string>
     <string name="tollymore_forest_park">Tollymore Forest Park</string>
     <string name="ward_castle">Ward Castle</string>
     <string name="mussenden_temple">Mussenden Temple</string>
-    <string name="the_dark_hedges">The Dark Hedges</string>
+    <string name="the_dark_hedges" translatable="false">The Dark Hedges</string>
     <string name="ballintoy_harbour">Ballintoy Harbour</string>
     <string name="kings_landing_gate">Kings Landing Gate</string>
     <string name="red_keep_gate">Red Keep Gate</string>
@@ -40,7 +40,7 @@
     <string name="azure_window">Azure Window</string>
     <string name="verdala_palace">Verdala Palace</string>
     <string name="yunkai_and_pentos">Yunkai and Pentos</string>
-    <string name="astapor">Astapor</string>
-    <string name="ait_ben_haddou">Aït Ben Haddou</string>
-    <string name="essaouira">Essaouira</string>
+    <string name="astapor" translatable="false">Astapor</string>
+    <string name="ait_ben_haddou" translatable="false">Aït Ben Haddou</string>
+    <string name="essaouira" translatable="false">Essaouira</string>
 </resources>
