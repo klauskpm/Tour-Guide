@@ -137,15 +137,6 @@ public class Location {
     }
 
     /**
-     * Sets image resource id.
-     *
-     * @param mImageResourceId the image resource id
-     */
-    public void setmImageResourceId(int mImageResourceId) {
-        this.mImageResourceId = mImageResourceId;
-    }
-
-    /**
      * Has image boolean.
      *
      * @return the boolean
