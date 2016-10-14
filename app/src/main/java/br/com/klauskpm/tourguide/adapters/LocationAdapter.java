@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 import br.com.klauskpm.tourguide.Location;
@@ -34,28 +36,33 @@ public class LocationAdapter extends ArrayAdapter<Location> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View rootView = convertView;
+        final ViewHolder holder;
         if (rootView == null) {
             rootView = LayoutInflater.from(getContext()).inflate(
                     R.layout.card_item, parent, false
             );
+
+            holder = new ViewHolder();
+            holder.placeImage = (ImageView) rootView.findViewById(R.id.place_image);
+            holder.fakeTitleTextView = (TextView) rootView.findViewById(R.id.got_place_name);
+            holder.realTitleTextView = (TextView) rootView.findViewById(R.id.real_life_place_name);
+            holder.mapActionButton = (Button) rootView.findViewById(R.id.map_action_button);
+
+            rootView.setTag(holder);
+        } else {
+            holder = (ViewHolder) rootView.getTag();
         }
 
         final Location location = getItem(position);
         assert location != null;
 
         if (location.hasImage()) {
-            ImageView placeImage = (ImageView) rootView.findViewById(R.id.place_image);
-            placeImage.setImageResource(location.getmImageResourceId());
+            Picasso.with(getContext()).load(location.getmImageResourceId()).into(holder.placeImage);
         }
 
-        TextView fakeTitleTextView = (TextView) rootView.findViewById(R.id.got_place_name);
-        fakeTitleTextView.setText(location.getFakePlaceTitle());
-
-        TextView realTitleTextView = (TextView) rootView.findViewById(R.id.real_life_place_name);
-        realTitleTextView.setText(location.getRealPlaceTitle());
-
-        Button mapActionButton = (Button) rootView.findViewById(R.id.map_action_button);
-        mapActionButton.setOnClickListener(new View.OnClickListener() {
+        holder.fakeTitleTextView.setText(location.getFakePlaceTitle());
+        holder.realTitleTextView.setText(location.getRealPlaceTitle());
+        holder.mapActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Map.callIntent(getContext(), location.getLat(), location.getLong(),
@@ -64,5 +71,12 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         });
 
         return rootView;
+    }
+
+    private class ViewHolder {
+        ImageView placeImage;
+        TextView fakeTitleTextView;
+        TextView realTitleTextView;
+        Button mapActionButton;
     }
 }
